@@ -64,8 +64,8 @@ function addRow(name, email, password, dob, terms) {
     nodata.classList.add("hidden");
     table.classList.remove("hidden");
     var table = document.getElementById("table");
-    h = `<td class="px-4 py-3 text-sm font-medium text-gray-900 count"></td>
-        <td class="text-sm text-gray-900 font-light px-4 py-3">` + name + `</td>
+    //h = `<td class="px-4 py-3 text-sm font-medium text-gray-900 count"></td>
+    h = `<td class="text-sm text-gray-900 font-light px-4 py-3">` + name + `</td>
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + email + `</td>
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + password + `</td>
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + dob + `</td>
