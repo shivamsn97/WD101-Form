@@ -25,7 +25,11 @@ function submitDetails(e) {
     });
     localStorage.setItem("data", JSON.stringify(vals));
     addRow(name, email, password, dob, terms);
-    form.clear();
+    form.name.value = "";
+    form.email.value = "";
+    form.password.value = "";
+    form.dob.value = "";
+    form.terms.checked = false;
     return false;
 }
 
