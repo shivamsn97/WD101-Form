@@ -50,10 +50,10 @@ function resetDetails() {
         localStorage.clear();
         var table_tbody = document.getElementById("table_tbody");
         table_tbody.innerHTML = "";
-        // var table = document.getElementById("table");
-        // table.classList.add("hidden");
-        // var nodata = document.getElementById("nodata");
-        // nodata.classList.remove("hidden");
+        var table = document.getElementById("table");
+        table.classList.add("hidden");
+        var nodata = document.getElementById("nodata");
+        nodata.classList.remove("hidden");
         return true;
     }
 }
@@ -64,8 +64,8 @@ function addRow(name, email, password, dob, terms) {
     nodata.classList.add("hidden");
     table.classList.remove("hidden");
     var table = document.getElementById("table");
-    //h = `<td class="px-4 py-3 text-sm font-medium text-gray-900 count"></td>
-    h = `<td class="text-sm text-gray-900 font-light px-4 py-3">` + name + `</td>
+    h = `<td class="px-4 py-3 text-sm font-medium text-gray-900 count"></td>
+        <td class="text-sm text-gray-900 font-light px-4 py-3">` + name + `</td>
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + email + `</td>
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + password + `</td>
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + dob + `</td>
@@ -85,9 +85,9 @@ window.onload = function() {
             addRow(data[i].name, data[i].email, data[i].password, data[i].dob, data[i].terms);
         }
     } else {
-        // var nodata = document.getElementById("nodata");
-        // var table = document.getElementById("table");
-        // nodata.classList.remove("hidden");
-        // table.classList.add("hidden");
+        var nodata = document.getElementById("nodata");
+        var table = document.getElementById("table");
+        nodata.classList.remove("hidden");
+        table.classList.add("hidden");
     }
 }
