@@ -48,9 +48,9 @@ function resetDetails() {
     var confirm = window.confirm("Are you sure you want to reset the form?");
     if (confirm) {
         localStorage.clear();
-        var datatable_tbody = document.getElementById("datatable_tbody");
-        datatable_tbody.innerHTML = "";
-        var table = document.getElementById("datatable");
+        var table_tbody = document.getElementById("table_tbody");
+        table_tbody.innerHTML = "";
+        var table = document.getElementById("table");
         table.classList.add("hidden");
         var nodata = document.getElementById("nodata");
         nodata.classList.remove("hidden");
@@ -60,10 +60,10 @@ function resetDetails() {
 
 function addRow(name, email, password, dob, terms) {
     var nodata = document.getElementById("nodata");
-    var table = document.getElementById("datatable");
+    var table = document.getElementById("table");
     nodata.classList.add("hidden");
     table.classList.remove("hidden");
-    var table = document.getElementById("datatable");
+    var table = document.getElementById("table");
     h = `<td class="px-4 py-3 text-sm font-medium text-gray-900 count"></td>
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + name + `</td>
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + email + `</td>
@@ -86,7 +86,7 @@ window.onload = function() {
         }
     } else {
         var nodata = document.getElementById("nodata");
-        var table = document.getElementById("datatable");
+        var table = document.getElementById("table");
         nodata.classList.remove("hidden");
         table.classList.add("hidden");
     }
