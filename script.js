@@ -50,10 +50,10 @@ function resetDetails() {
         localStorage.clear();
         var table_tbody = document.getElementById("table_tbody");
         table_tbody.innerHTML = "";
-        var table = document.getElementById("table");
-        table.classList.add("hidden");
-        var nodata = document.getElementById("nodata");
-        nodata.classList.remove("hidden");
+        // var table = document.getElementById("table");
+        // table.classList.add("hidden");
+        // var nodata = document.getElementById("nodata");
+        // nodata.classList.remove("hidden");
         return true;
     }
 }
@@ -85,9 +85,9 @@ window.onload = function() {
             addRow(data[i].name, data[i].email, data[i].password, data[i].dob, data[i].terms);
         }
     } else {
-        var nodata = document.getElementById("nodata");
-        var table = document.getElementById("table");
-        nodata.classList.remove("hidden");
-        table.classList.add("hidden");
+        // var nodata = document.getElementById("nodata");
+        // var table = document.getElementById("table");
+        // nodata.classList.remove("hidden");
+        // table.classList.add("hidden");
     }
 }
