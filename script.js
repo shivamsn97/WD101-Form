@@ -69,7 +69,7 @@ function addRow(name, email, password, dob, terms) {
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + email + `</td>
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + password + `</td>
         <td class="text-sm text-gray-900 font-light px-4 py-3">` + dob + `</td>
-        <td class="text-sm text-gray-900 font-light px-4 py-3 mr-12">` + ((terms)?'✅':'❌') + `</td>`;
+        <td class="text-sm text-gray-900 font-light px-4 py-3 mr-12">` + ((terms)?'true':'false') + `</td>`;
     rowclass = "bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100";
     var row = table.insertRow(-1);
     row.className = rowclass;
